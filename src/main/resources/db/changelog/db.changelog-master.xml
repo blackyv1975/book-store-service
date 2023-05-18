@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 
     <property name="now" value="sysdate" dbms="oracle"/>
     <property name="now" value="CURRENT_TIMESTAMP" dbms="db2,mssql"/>
@@ -19,7 +20,6 @@
     <property name="uuid_function" value="NEWID()" dbms="mssql"/>
     <property name="uuid_function" value="sys_guid()" dbms="oracle"/>
 
-    <!-- for execute only one file uncomment line 15, rename it and comment line 16 before run liquibase update -->
-    <!--<include file="liquibase/changelog/2023/Q1/20230315-1100-vladimirvasic.xml"/>-->
-    <includeAll path="liquibase/changelog"/>
+    <include file="db.changelog-1.0.xml" relativeToChangelogFile="true"/>
+
 </databaseChangeLog>

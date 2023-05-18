@@ -17,7 +17,7 @@ services:
       retail_app_network:
         ipv4_address: 172.20.0.5
     volumes:
-      - ~/docker-data/postgres-data/book_store_db:/var/lib/postgresql/data/
+      - db_data:/var/lib/postgresql/data/
       - ./init-book-store-db.sql:/docker-entrypoint-initdb.d/init-book-store-db.sql
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready" ]
@@ -27,7 +27,7 @@ services:
       retries: 3
 
 #  book_store_app:
-#    image: docker.io/library/book-store:0.0.1-SNAPSHOT
+#    image: docker.io/blackyv75/book-store-service:0.0.1
 #    container_name: book_store_app
 #    restart: always
 #    ports:
@@ -82,3 +82,5 @@ networks:
     ipam:
       config:
         - subnet: 172.20.0.0/24
+volumes:
+  db_data:

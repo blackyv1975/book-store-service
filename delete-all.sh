@@ -1,8 +1,8 @@
 #!/bin/bash
 
-docker kill book_store_db
-docker rm book_store_db
+docker compose -f compose.yml down
 
+docker volume prune -f
 
 docker system prune -f
 

@@ -19,7 +19,7 @@ spring:
     user: postgres
     password: postgres
     enabled: true
-    change-log: classpath:liquibase/master.xml
+    change-log: classpath:/db/changelog/db.changelog-master.xml
   webflux:
     problemdetails:
       enabled: true

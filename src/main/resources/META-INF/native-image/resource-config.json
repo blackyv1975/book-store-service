@@ -35,13 +35,22 @@
       "pattern":"\\QMETA-INF/services/liquibase.database.Database\\E"
     }, 
     {
+      "pattern":"\\QMETA-INF/services/liquibase.datatype.LiquibaseDataType\\E"
+    }, 
+    {
+      "pattern":"\\QMETA-INF/services/liquibase.diff.compare.DatabaseObjectComparator\\E"
+    }, 
+    {
       "pattern":"\\QMETA-INF/services/liquibase.executor.Executor\\E"
     }, 
     {
-      "pattern":"\\QMETA-INF/services/liquibase.logging.LogService\\E"
+      "pattern":"\\QMETA-INF/services/liquibase.hub.HubService\\E"
     }, 
     {
-      "pattern":"\\QMETA-INF/services/liquibase.logging.mdc.MdcManager\\E"
+      "pattern":"\\QMETA-INF/services/liquibase.lockservice.LockService\\E"
+    }, 
+    {
+      "pattern":"\\QMETA-INF/services/liquibase.logging.LogService\\E"
     }, 
     {
       "pattern":"\\QMETA-INF/services/liquibase.parser.ChangeLogParser\\E"
@@ -68,250 +77,13 @@
       "pattern":"\\Qapplication.yml\\E"
     }, 
     {
+      "pattern":"\\Qdb/changelog/db.changelog-1.0.xml\\E"
+    }, 
+    {
+      "pattern":"\\Qdb/changelog/db.changelog-master.xml\\E"
+    }, 
+    {
       "pattern":"\\Qliquibase.build.properties\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/2023/Q1/20230315-1100-vladimirvasic.xml\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/AbstractChangeLogHistoryService.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogChild.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogHistoryService.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogHistoryServiceFactory$1.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogHistoryServiceFactory.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogInclude.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogIncludeAll.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogIterator$1.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogIterator$2.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogIterator.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogParameters$ChangeLogParameter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogParameters$Filter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogParameters.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeLogProperty.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeSet$ExecType.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeSet$RunStatus.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeSet$ValidationFailOption.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeSet.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangeSetStatus.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangelogRewriter$ChangeLogRewriterResult.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ChangelogRewriter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/DatabaseChangeLog$1.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/DatabaseChangeLog$GlobalPreconditionContainer.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/DatabaseChangeLog$ModifyChangeSets.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/DatabaseChangeLog$OnUnknownFileFormat.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/DatabaseChangeLog.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ExpressionExpander$1.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/ExpressionExpander.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/IncludeAllFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/MockChangeLogHistoryService.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/OfflineChangeLogHistoryService$1.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/OfflineChangeLogHistoryService$2.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/OfflineChangeLogHistoryService$3.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/OfflineChangeLogHistoryService$4.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/OfflineChangeLogHistoryService$5.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/OfflineChangeLogHistoryService$Columns.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/OfflineChangeLogHistoryService$ReplaceChangeSetLogic.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/OfflineChangeLogHistoryService.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/RanChangeSet.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/RollbackContainer.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/StandardChangeLogHistoryService.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/column/LiquibaseColumn.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/ActuallyExecutedChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/AfterTagChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/AlreadyRanChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/ChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/ChangeSetFilterResult.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/ContextChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/CountChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/DbmsChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/ExecutedAfterChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/IgnoreChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/LabelChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/NotInChangeLogChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/NotRanChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/RanChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/ShouldRunChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/filter/UpToTagChangeSetFilter.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/AbstractChangeExecListener.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/ChangeExecListener.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/ChangeLogSyncListener.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/ChangeLogSyncVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/ChangeSetVisitor$Direction.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/ChangeSetVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/DBDocVisitor$1.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/DBDocVisitor$ChangeLogInfo.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/DBDocVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/DefaultChangeExecListener.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/DetermineNumberChangesFollowingVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/ExpectedChangesVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/ListVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/LoggingChangeExecListener.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/RollbackListVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/RollbackVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/SkippedChangeSetVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/StatusVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/UpdateVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/changelog/visitor/ValidatingVisitor.class\\E"
-    }, 
-    {
-      "pattern":"\\Qliquibase/master.xml\\E"
     }, 
     {
       "pattern":"\\Qorg/springframework/boot/autoconfigure/transaction/TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration.class\\E"
@@ -320,20 +92,23 @@
       "pattern":"\\Qorg/springframework/http/codec/CodecConfigurer.properties\\E"
     }, 
     {
-      "pattern":"\\Qwww.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd\\E"
-    }, 
-    {
-      "pattern":"\\Qwww.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd\\E"
+      "pattern":"\\Qwww.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd\\E"
     }
   ]},
   "bundles":[
     {
       "name":"com.sun.org.apache.xerces.internal.impl.xpath.regex.message",
-      "locales":[""]
+      "locales":[
+        "", 
+        "und"
+      ]
     }, 
     {
       "name":"liquibase/i18n/liquibase-core",
-      "locales":[""]
+      "locales":[
+        "", 
+        "und"
+      ]
     }
   ]
 }
